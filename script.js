@@ -14,14 +14,14 @@ function newItem() {
   //   }
 
   //1. jquery version
-  let li = $("<li></li>");
-  let inputValue = $("#input").val();
+  const li = $("<li></li>");
+  const inputValue = $("#input").val();
   li.append(inputValue);
 
   if (inputValue === "") {
     alert("you must write something.");
   } else {
-    let list = $("#list");
+    const list = $("#list");
     list.append(li);
   }
 
@@ -54,7 +54,7 @@ function newItem() {
 
   //3 i jquery version
 
-  let crossOutButton = $("<crossOutButton></crossOutButton>");
+  const crossOutButton = $("<crossOutButton></crossOutButton>");
   crossOutButton.append(document.createTextNode("X"));
   li.append(crossOutButton);
 
