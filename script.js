@@ -60,7 +60,7 @@ function newItem() {
 
   //3 ii jquery version
   const deleteListItem = () => {
-    li.addClass("delete");
+    li.remove();
   };
 
   crossOutButton.on("click", () => {
